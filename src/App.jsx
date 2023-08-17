@@ -27,20 +27,20 @@ function App() {
 
   return (
     <>
-      <div className='App'>
+      <div>
         <form onSubmit={handleSubmit}>
           <h2>Ingresa Tus Datos:</h2>
-          <label htmlFor='nombre'>Nombre:</label>
-          <input name='nombre' onChange={(event) => setNombre(event.target.value)}/>
+          <label>Nombre:</label>
+          <input onChange={(event) => setNombre(event.target.value)}/>
           <br></br>
-          <label htmlFor='apellido'>Apellido:</label>
-          <input name='Apellido' onChange={(event) => setApellido(event.target.value)}/>
+          <label>Apellido:</label>
+          <input onChange={(event) => setApellido(event.target.value)}/>
           <br></br><br></br>
           <button>Verificar</button>
         </form>
       </div>
 
-      {error && <><h6 className='error'>Vuelve A Intentarlo </h6></>}
+      {error && <><h6>Vuelve A Intentarlo </h6></>}
       {show ? <>
 
         <Card nombre={nombre} apellido={apellido}/>
