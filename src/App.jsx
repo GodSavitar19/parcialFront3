@@ -29,7 +29,7 @@ function App() {
     <>
       <div className='App'>
         <form onSubmit={handleSubmit}>
-          <h2>Ingresa tus datos:</h2>
+          <h2>Ingresa Tus Datos:</h2>
           <label htmlFor='nombre'>Nombre:</label>
           <input name='nombre' onChange={(event) => setNombre(event.target.value)}/>
           <br></br>
